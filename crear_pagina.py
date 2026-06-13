@@ -1,5 +1,8 @@
 import os
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 NOTION_TOKEN = os.environ["NOTION_TOKEN"]
 PARENT_PAGE_ID = os.environ.get("NOTION_PARENT_PAGE_ID", "b5ef2741d4424fe2bceda6edc28a09ae")
