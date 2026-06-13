@@ -1,0 +1,6 @@
+.DS_Store
+.claude/
+.vscode/
+__pycache__/
+*.pyc
+.env
