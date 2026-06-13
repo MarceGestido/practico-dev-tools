@@ -1,6 +1,10 @@
+import os
+from dotenv import load_dotenv
 from fastmcp import FastMCP
 
-mcp = FastMCP("fmcp_udhfg8cHvMjuO3VdpBCXfkozwEHwvp_icQUR0rg54wg")
+load_dotenv()
+
+mcp = FastMCP(os.environ["FASTMCP_TOKEN"])
 
 @mcp.tool()
 def saludar(nombre: str) -> str:
